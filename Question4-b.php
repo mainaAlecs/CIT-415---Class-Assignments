@@ -16,7 +16,7 @@ class Validator {
         if (strlen($password) < 8){
             return false;
         } 
-        //let's make sure the password conttains at least one uppercase letter, one lowercase letter and a digit
+//let's make sure the password conttains at least one uppercase letter, one lowercase letter and a digit
         if(!preg_match('/[A-Z]/', $password) ||
            !preg_match('/[a-z]/', $password) ||
            !preg_match('/[0-9]/', $password)){
@@ -47,6 +47,8 @@ class Validator {
             }
         }
     }
+    
+//usage    
 
 $email = "amlonwolf@gmail.com";
 $password = "paSsw0rd123";
