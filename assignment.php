@@ -17,7 +17,8 @@ class Person{
     }
 
 }
-class Employee extends Person{  //properties
+class Employee extends Person{  
+    //properties
  public $contact;
  public $Id_no;
  public $position;
@@ -31,6 +32,9 @@ class Employee extends Person{  //properties
     }    
     function get_name(){
         return $this ->name ."\n";
+    }
+    function get_position(){
+        return $this ->position;
     }
 }
 class Student extends Person{
@@ -56,7 +60,7 @@ class Student extends Person{
    
     }
     $Maina = new Student("Maina", "23yrs","CI/00075/018", "Year 4");
+    $Maina -> message();
     echo $Maina ->get_reg_no() ."\n";
     echo $Maina ->get_name() ."\n";
-    $Maina -> message();
  ?>
