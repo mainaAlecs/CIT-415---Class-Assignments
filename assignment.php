@@ -33,9 +33,6 @@ class Employee extends Person{
     function get_name(){
         return $this ->name ."\n";
     }
-    function get_position(){
-        return $this ->position;
-    }
 }
 class Student extends Person{
     private string $year_of_study;
