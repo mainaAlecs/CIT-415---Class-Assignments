@@ -5,7 +5,7 @@ class LibraryItem{
     private $itemID;
     private $checkedOut;
     private $checkedIn;
-//Let's use a constructor to initialize the properties    
+//use a constructor to initialize the properties    
     public function __construct($title, $itemID){
         $this->title = $title;
         $this->itemID = $itemID;
