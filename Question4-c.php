@@ -17,7 +17,7 @@ class LibraryItem{
         $this->checkedOut = true;
     }
     public function checkIn(){
-        $this->checkedIn = false;
+        $this->checkedOut = false;
     }
 
 //this is a method to display the item details
